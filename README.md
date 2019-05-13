@@ -10,7 +10,7 @@
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
-[![](https://github.com/butterflyXX/LXCSource/blob/master/LXCImagePickerManager/2.gif)
+[![](https://github.com/butterflyXX/LXCSource/blob/master/LXCImagePickerManager/1.gif)
 
 ## Installation
 

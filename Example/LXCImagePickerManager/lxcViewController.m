@@ -7,6 +7,7 @@
 //
 
 #import "lxcViewController.h"
+#import "LXCImagePickerManager.h"
 
 @interface lxcViewController ()
 
@@ -20,10 +21,11 @@
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    LXCImagePickerManager *picker = [[LXCImagePickerManager alloc] init];
+    [picker showImagePickerActionSheetWithViewController:self ImageBlock:^(UIImage *image) {
+        NSLog(@"%@",image);
+    }];
 }
 
 @end
